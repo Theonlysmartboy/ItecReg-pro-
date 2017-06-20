@@ -24,10 +24,11 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.resetpassword = New System.Windows.Forms.LinkLabel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtUname = New System.Windows.Forms.TextBox()
+        Me.TxtPwd = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.cmdSignIn = New System.Windows.Forms.Button()
+        Me.SignUp = New System.Windows.Forms.Button()
+        Me.SignIn = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,29 +46,29 @@ Partial Class Login
         'resetpassword
         '
         Me.resetpassword.AutoSize = True
-        Me.resetpassword.Location = New System.Drawing.Point(170, 171)
+        Me.resetpassword.Location = New System.Drawing.Point(206, 187)
         Me.resetpassword.Name = "resetpassword"
-        Me.resetpassword.Size = New System.Drawing.Size(59, 13)
+        Me.resetpassword.Size = New System.Drawing.Size(86, 13)
         Me.resetpassword.TabIndex = 1
         Me.resetpassword.TabStop = True
-        Me.resetpassword.Text = "LinkLabel1"
+        Me.resetpassword.Text = "Forgot Password"
         '
-        'TextBox1
+        'TxtUname
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(234, 12)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(238, 26)
-        Me.TextBox1.TabIndex = 1
+        Me.TxtUname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUname.Location = New System.Drawing.Point(234, 12)
+        Me.TxtUname.Name = "TxtUname"
+        Me.TxtUname.Size = New System.Drawing.Size(238, 26)
+        Me.TxtUname.TabIndex = 1
         '
-        'TextBox2
+        'TxtPwd
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(234, 54)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(238, 26)
-        Me.TextBox2.TabIndex = 2
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.TxtPwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPwd.Location = New System.Drawing.Point(234, 54)
+        Me.TxtPwd.Name = "TxtPwd"
+        Me.TxtPwd.Size = New System.Drawing.Size(238, 26)
+        Me.TxtPwd.TabIndex = 2
+        Me.TxtPwd.UseSystemPasswordChar = True
         '
         'Label2
         '
@@ -79,14 +80,23 @@ Partial Class Login
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Password"
         '
-        'cmdSignIn
+        'SignUp
         '
-        Me.cmdSignIn.BackgroundImage = Global.ItecReg_pro_.My.Resources.Resources.LoginBtn
-        Me.cmdSignIn.Location = New System.Drawing.Point(289, 116)
-        Me.cmdSignIn.Name = "cmdSignIn"
-        Me.cmdSignIn.Size = New System.Drawing.Size(193, 68)
-        Me.cmdSignIn.TabIndex = 6
-        Me.cmdSignIn.UseVisualStyleBackColor = True
+        Me.SignUp.BackgroundImage = Global.ItecReg_pro_.My.Resources.Resources.SignUp2
+        Me.SignUp.Location = New System.Drawing.Point(13, 116)
+        Me.SignUp.Name = "SignUp"
+        Me.SignUp.Size = New System.Drawing.Size(196, 68)
+        Me.SignUp.TabIndex = 7
+        Me.SignUp.UseVisualStyleBackColor = True
+        '
+        'SignIn
+        '
+        Me.SignIn.BackgroundImage = Global.ItecReg_pro_.My.Resources.Resources.LoginBtn
+        Me.SignIn.Location = New System.Drawing.Point(289, 116)
+        Me.SignIn.Name = "SignIn"
+        Me.SignIn.Size = New System.Drawing.Size(193, 68)
+        Me.SignIn.TabIndex = 6
+        Me.SignIn.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -102,11 +112,12 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(484, 212)
-        Me.Controls.Add(Me.cmdSignIn)
+        Me.Controls.Add(Me.SignUp)
+        Me.Controls.Add(Me.SignIn)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TxtPwd)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TxtUname)
         Me.Controls.Add(Me.resetpassword)
         Me.Controls.Add(Me.Label1)
         Me.MaximizeBox = False
@@ -123,9 +134,10 @@ Partial Class Login
 
     Friend WithEvents Label1 As Label
     Friend WithEvents resetpassword As LinkLabel
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtUname As TextBox
+    Friend WithEvents TxtPwd As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents cmdSignIn As Button
+    Friend WithEvents SignIn As Button
+    Friend WithEvents SignUp As Button
 End Class
