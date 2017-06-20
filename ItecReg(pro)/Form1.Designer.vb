@@ -32,26 +32,29 @@ Partial Class Form1
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 193)
+        Me.ProgressBar1.Location = New System.Drawing.Point(1, 193)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(517, 23)
+        Me.ProgressBar1.Size = New System.Drawing.Size(521, 23)
         Me.ProgressBar1.Step = 1
         Me.ProgressBar1.TabIndex = 0
         '
         'LblLevel
         '
         Me.LblLevel.AutoSize = True
-        Me.LblLevel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblLevel.Location = New System.Drawing.Point(10, 167)
+        Me.LblLevel.BackColor = System.Drawing.Color.Transparent
+        Me.LblLevel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblLevel.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.LblLevel.Location = New System.Drawing.Point(10, 168)
         Me.LblLevel.Name = "LblLevel"
-        Me.LblLevel.Size = New System.Drawing.Size(0, 24)
+        Me.LblLevel.Size = New System.Drawing.Size(0, 25)
         Me.LblLevel.TabIndex = 1
         '
         'LblVersion
         '
         Me.LblVersion.AutoSize = True
+        Me.LblVersion.BackColor = System.Drawing.Color.Transparent
         Me.LblVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblVersion.Location = New System.Drawing.Point(399, 219)
+        Me.LblVersion.Location = New System.Drawing.Point(382, 234)
         Me.LblVersion.Name = "LblVersion"
         Me.LblVersion.Size = New System.Drawing.Size(0, 24)
         Me.LblVersion.TabIndex = 2
@@ -59,8 +62,9 @@ Partial Class Form1
         'LblCopyright
         '
         Me.LblCopyright.AutoSize = True
+        Me.LblCopyright.BackColor = System.Drawing.Color.Transparent
         Me.LblCopyright.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCopyright.Location = New System.Drawing.Point(10, 219)
+        Me.LblCopyright.Location = New System.Drawing.Point(4, 235)
         Me.LblCopyright.Name = "LblCopyright"
         Me.LblCopyright.Size = New System.Drawing.Size(0, 24)
         Me.LblCopyright.TabIndex = 3
@@ -73,7 +77,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(542, 262)
+        Me.BackgroundImage = Global.ItecReg_pro_.My.Resources.Resources.ITEC1
+        Me.ClientSize = New System.Drawing.Size(522, 262)
         Me.Controls.Add(Me.LblCopyright)
         Me.Controls.Add(Me.LblVersion)
         Me.Controls.Add(Me.LblLevel)
